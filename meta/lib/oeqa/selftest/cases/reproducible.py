@@ -79,7 +79,7 @@ def compare_file(reference, test, diffutils_sysroot):
 class ReproducibleTests(OESelftestTestCase):
     package_classes = ['deb', 'ipk']
     images = ['core-image-minimal', 'core-image-sato', 'core-image-full-cmdline']
-    save_results = False
+    save_results = True
     # This variable controls if one of the test builds is allowed to pull from
     # an sstate cache/mirror. The other build is always done clean as a point of
     # comparison.
